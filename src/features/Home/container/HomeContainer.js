@@ -14,14 +14,15 @@ const HomeContainer = props => {
         <div className="container-fluid p-0 ">
             <div className="position-relative">
                 <HomeCarousel />
-                <div className="position-absolute" style={{  top: 0, zIndex: 3 }}><Navbar /></div>
+                <div className="position-absolute" style={{  top: 0,}}><Navbar /></div>
             </div>
-
-
 
             <AvailabityTime />
             <RoomInfo />
+            <div className="container">
             <AboutUs />
+            </div>
+           
             <InfoSlide />
             <EventCard />
             <ServiceCard />

@@ -4,3 +4,4 @@ export const model ={
     Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage …
     ,
 }
+https://github.com/femioladeji/react-slideshow#readme
