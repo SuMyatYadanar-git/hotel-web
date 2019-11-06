@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "jquery/dist/jquery.js"
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.js"
+import { MediaQueryProvider } from 'react-media-query-hoc'
+
+import AppRoute from './AppRoute';
 
 function App() {
+
+  const customQueries = {
+     
+    mobile: 'screen and  (max-width:767px)',/* (max-width: 640px) */
+    tablet: 'screen and (min-width:768px) and (max-width: 1024px)',
+    desktop: 'screen and (min-width:1025px) and (min-width: 1441px)',
+  }
+  // window.onscroll = ()=> console.log(window.scrollY)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MediaQueryProvider queries={customQueries}>
+      <AppRoute />
+    </MediaQueryProvider>
   );
 }
 
