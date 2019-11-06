@@ -9,21 +9,24 @@ const Navbar = props => {
     const [expand, setExpand] = useState(false)
 
     return (
-        <div className="container">
-            {/* above navbar */}
-            <div className="py-2 d-flex justify-content-start " style={{ borderBottom: '1px solid black' }}>
-                <div >
-                    <span ><i class="fas fa-map-marker-alt" /> </span>
-                    <span>225 Beach Street, Australian</span>
-                </div>
-                <div className="px-5">
-                    <span > <i class="fas fa-phone-alt" /></span>
-                    <span> 1-548-854-8898</span>
-                </div>
-            </div>
+        <div className="container bg-transparent sticky-top position-fixed border border-danger">
+          {
+              !media.mobile && 
+              <div className="py-2 d-flex align-items-start " style={{ borderBottom: '1px solid black' ,fontSize:media.desktop ? 16 :14 }}>
+              <div className="  ">
+                  <span ><i class="fas fa-map-marker-alt" /> </span>
+                  <span>225 Beach Street, Australian</span>
+              </div>
+              <div className="px-3 ">
+                  <span > <i class="fas fa-phone-alt" /></span>
+                  <span> 1-548-854-8898</span>
+              </div>
+          </div>
+          }
+       
 
-            <div className=" d-flex justify-content-between  py-3" >
-                <div>  <img src={icon1} className="rounded-circle" width={40} height={40} /></div>
+            <div className=" d-flex justify-content-between align-items-center py-2" >
+                <div> <img src={icon1} className="img-fluid d-block" width={50} height={50} /></div>
                 <div >
                     {
                         // window.innerWidth < 792

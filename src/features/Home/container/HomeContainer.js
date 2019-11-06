@@ -11,15 +11,20 @@ import Navbar from '../../app/Navbar'
 
 const HomeContainer = props => {
     return (
-        <div className="container-fluid">
-            <Navbar/>
-         {/* <HomeCarousel/> */}
-         {/* <AvailabityTime/>
-         <RoomInfo/>
-         <AboutUs/>
-         <InfoSlide/>
-         <EventCard/>
-         <ServiceCard/> */}
+        <div className="container-fluid p-0 ">
+            <div className="position-relative">
+                <HomeCarousel />
+                <div className="position-absolute" style={{  top: 0, zIndex: 3 }}><Navbar /></div>
+            </div>
+
+
+
+            <AvailabityTime />
+            <RoomInfo />
+            <AboutUs />
+            <InfoSlide />
+            <EventCard />
+            <ServiceCard />
         </div>
     )
 }
