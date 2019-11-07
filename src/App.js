@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.js"
 import { MediaQueryProvider } from 'react-media-query-hoc'
 
+import './App.css'
 import AppRoute from './AppRoute';
 
 function App() {
