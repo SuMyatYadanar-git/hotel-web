@@ -1,4 +1,5 @@
 import React from 'react'
+import {withMedia} from 'react-media-query-hoc'
 
 import HomeCarousel from '../components/HomeCarousel'
 import AvailabityTime from '../components/AvailabityTime'
@@ -8,25 +9,28 @@ import InfoSlide from '../components/InfoSlide'
 import ServiceCard from '../components/ServiceCard'
 import EventCard from '../components/EventCard'
 import Navbar from '../../app/Navbar'
+import '../components/home.css'
 
 const HomeContainer = props => {
+    const {media} = props
+
     return (
         <div className="container-fluid p-0 ">
-            <div className="position-relative">
-                <HomeCarousel />
-                <div className="position-absolute" style={{  top: 0,}}><Navbar /></div>
+            <div >
+                <HomeCarousel media={media}/>
+                <Navbar />
             </div>
 
             <AvailabityTime />
             <RoomInfo />
             <div className="container">
-            <AboutUs />
+                <AboutUs />
             </div>
-           
+
             <InfoSlide />
             <EventCard />
             <ServiceCard />
         </div>
     )
 }
-export default HomeContainer;
+export default withMedia(HomeContainer);

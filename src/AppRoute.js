@@ -15,10 +15,10 @@ const AppRoute = props => {
         <Router>
             <Switch>
                 <Route path={`${route.home}`} exact component={HomeContainer} />
-                <Route path={`${route.room}`} component={RoomContainer} />
-                <Route path={`${route.restaurant}`} component={RestaurantContainer} />
-                <Route path={`${route.contact}`} component={ContactContainer} />
-                <Route path={`${route.page}`} component={UpgradePage} />
+                <Route path={`/${route.room}`} component={RoomContainer} />
+                <Route path={`/${route.restaurant}`} component={RestaurantContainer} />
+                <Route path={`/${route.contact}`} component={ContactContainer} />
+                <Route path={`/${route.page}`} component={UpgradePage} />
             </Switch>
         </Router>
     )
