@@ -1,14 +1,14 @@
 import React from 'react'
 
 import RoomHeader from '../components/RoomHeader'
-import RoomDetail from '../components/RoomDetail'
+import RoomTypeInfo from '../components/RoomTypeInfo'
 
 
 const RoomContainer = props => {
-    return(
+    return (
         <div >
             <RoomHeader />
-            <RoomDetail />
+            <RoomTypeInfo />
         </div>
     )
 }

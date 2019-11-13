@@ -5,16 +5,21 @@ import LunchCard from '../components/LunchCard'
 import DinnerCard from '../components/DinnerCard'
 import DrinkCard from '../components/DrinkCard'
 
+import RestaurantItem from '../components/RestaurantItem'
+
 
 const RestaurantContainer = props => {
     return (
-        <div>
-            <RestaurantHeader/>
-            <BreakfastCard/>
+        <div className="container-fluid-0">
+            <RestaurantHeader />
+            <div className="container">
+                <RestaurantItem />
+            </div>
+            {/* <BreakfastCard/>   
             <LunchCard/>
             <DinnerCard/>
-            <DrinkCard/>
-        
+            <DrinkCard/> */}
+
         </div>
     )
 }

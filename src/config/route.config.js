@@ -8,3 +8,5 @@ export const restaurant = "restaurant"
 
 export const contact = "contact"
 
+export const roomDetail="roomDetail"
+

@@ -8,6 +8,8 @@ import UpgradePage from './features/Page/UpgradePage'
 import RestaurantContainer from './features/Restaurant/container/RestaurantContainer'
 import ContactContainer from './features/Contact/container/ContactContainer'
 
+import RoomDetailPage from './features/Rooms/components/RoomDetailPage'
+
 
 
 const AppRoute = props => {
@@ -19,6 +21,7 @@ const AppRoute = props => {
                 <Route path={`/${route.restaurant}`} component={RestaurantContainer} />
                 <Route path={`/${route.contact}`} component={ContactContainer} />
                 <Route path={`/${route.page}`} component={UpgradePage} />
+                <Route path={`/${route.roomDetail}`} component={RoomDetailPage} />
             </Switch>
         </Router>
     )

@@ -10,7 +10,7 @@ const Navbar = props => {
     const [width, setWidth] = useState(window.innerWidth)
     const [expand, setExpand] = useState(false)
 
-    console.log(props.Link)
+  
 
 
     return (
@@ -31,7 +31,7 @@ const Navbar = props => {
                 }
 
 
-                <div className=" d-flex justify-content-between align-items-center py-1" style={{ borderBottom: media.mobile && '1px solid #dfdfdf' }}>
+                <div className=" d-flex justify-content-between align-items-center py-1 pt-3" style={{ borderBottom: media.mobile && '1px solid #dfdfdf' }}>
                     <div style={{ cursor: 'pointer' }}> <img src={icon1} className="img-fluid d-block" width={50} height={50} /></div>
                     <div >
                         {
